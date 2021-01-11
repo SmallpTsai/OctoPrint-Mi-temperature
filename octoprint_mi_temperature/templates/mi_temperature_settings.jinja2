@@ -1,0 +1,18 @@
+<h4>Sensors</h4>
+<form class="form-horizontal">
+  <div data-bind="foreach: settings.plugins.mi_temperature.sensors">
+    <div class="control-group">
+        <label class="control-label">Name</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: name">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Mac address</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: mac">
+        </div>
+    </div>
+  </div>
+
+</form>

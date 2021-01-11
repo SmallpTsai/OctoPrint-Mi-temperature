@@ -1,0 +1,9 @@
+/* TODO: Have your plugin's CSS files generated to here. */
+#navbar_plugin_mi_temperature th, #navbar_plugin_mi_temperature td {
+    text-align: center;
+    padding: 5px;
+}
+
+#navbar_plugin_mi_temperature td:nth-child(1) {
+    text-align: left;
+}

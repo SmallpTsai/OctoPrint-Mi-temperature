@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_mi_temperature/templates *
+recursive-include octoprint_mi_temperature/translations *
+recursive-include octoprint_mi_temperature/static *

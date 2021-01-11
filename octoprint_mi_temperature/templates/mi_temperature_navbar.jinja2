@@ -1,0 +1,24 @@
+<a href="javascript:void(0)" title="MI Temperature" class="dropdown-toggle" data-toggle="dropdown">
+    <i class="fa fa-thermometer-empty"></i>
+    <b class="caret"></b>
+</a>
+<div class="dropdown-menu">
+    <table border=0>
+        <thead>
+            <tr>
+                <th>Sensor</th>
+                <th><i class="fa fa-thermometer-empty"></i></th>
+                <th><i class="fa fa-tint"></i></th>
+                <th><i class="fa fa-battery-full"></i></th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: $root.sensors()">
+            <tr>
+                <td data-bind="text: name, attr: {title: mac}"> </td>
+                <td data-bind="html: temp() + '&deg;C'"> </td>
+                <td data-bind="html: humid() + '%'"> </td>
+                <td data-bind="html: bat() + '%'"> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
